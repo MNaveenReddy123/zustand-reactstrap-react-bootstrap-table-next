@@ -21,7 +21,7 @@ export default function App() {
             </CardHeader>
             <CardBody>
               <CardText>
-                A modern demo showcasing a counter and a todo list using Zustand store with Reactstrap UI components.
+                A modern demo showcasing a counter and a todo list using Zustand store with Reactstrap UI components with Todos stored using react-bootstrap-table-next.
               </CardText>
             </CardBody>
           </Card>
