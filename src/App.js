@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Row, Col, Card, CardBody, CardHeader, CardTitle, CardText } from 'reactstrap'
+import dayjs from 'dayjs'
 import Counter from './components/Counter'
 import TodoList from './components/TodoList'
 import useStore from './store/useStore'
@@ -17,12 +18,13 @@ export default function App() {
         <Col lg="12">
           <Card className="shadow-sm">
             <CardHeader className="bg-primary text-white">
-              <CardTitle className="mb-0">📊 Zustand Demo Application</CardTitle>
+              <CardTitle className="mb-0">📊 Zustand Demo Application — {dayjs().format('dddd, MMMM D, YYYY')}</CardTitle>
             </CardHeader>
             <CardBody>
               <CardText>
-                A modern demo showcasing a counter and a todo list using Zustand store with Reactstrap UI components with Todos stored using react-bootstrap-table-next.
+                A modern demo showcasing a counter and a todo list using Zustand store with Reactstrap UI components with Todos rendered using react-bootstrap-table-next.
               </CardText>
+              <CardText className="text-muted small mb-0">This header displays today's date using the <code>dayjs</code> library.</CardText>
             </CardBody>
           </Card>
         </Col>
